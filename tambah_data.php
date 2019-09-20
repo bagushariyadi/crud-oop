@@ -1,14 +1,24 @@
 <html>
 <head>
-	<div class="container">
-<div class="card">
-  <div class="card-body">
-	<hr>
-	<h1 align="center">BELAJAR CRUD OOP PHP</h1>
+		<title>Belajar OOP Dasar</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<h3>Tambah Data Barang</h3>
-<hr/>
+<header>
+	<div class="container">
+	<div id="merk">
+		<h1>>BELAJAR CRUD OOP PHP</h1>
+	</div>
+	<nav>
+		<ul>
+			<li class="active"><a href="index.php">Home</a></li>
+			<li><a href="tampil.php">Lihat Data</a></li>
+			<span><a href="logout.php">Logout</a></span>
+		</ul>
+	</nav>
+	</div>
+</header>
+<h2 align="center">Tambah Data</h2>
 <form method="post" action="proses_barang.php?action=add">
 <table>
 	<tr>

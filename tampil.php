@@ -1,29 +1,39 @@
-<?php include('koneksi.php');
+<?php 
+include('koneksi.php');
 $db = new database();
 $data_barang = $db->tampil_data();
 ?>
 <html>
 <head>
+<title>>BELAJAR CRUD OOP PHP | Welcome</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+<body>
+<header>
 	<div class="container">
-<div class="card">
-  <div class="card-body">
-	<link rel="stylesheet" href='css/materialize.css' />
+	<div id="merk">
+		<h1>BELAJAR CRUD OOP PHP</h1>
+	</div>
+	<nav>
+		<ul>
+			<li class="active"><a href="index.php">Home</a></li>
+			<li><a href="tampil.php">Lihat Data</a></li>
+			<span><a href="logout.php">Logout</a></span>
+		</ul>
+	</nav>
+	</div>
+</header>
+<head>
+	<h2 align="center">Tampil Data<br/>
+					   Belajar OOP Dasar</h2>
 </head>
 <body>
-	<nav class="light-blue lighten-1" role="navigation">
-		<div class="nav-wrapper container"><a id="logo-container" clas="brand-logo">BELAJAR CRUD OOP PHP</a>
-			<ul class="right hide-on-med-and-down">
-				<li><a class ="waves-effect waves-light btn" href="tambah_data.php">Tambah Data</a></li>
-			</ul>
-			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class ="mid-navigation-menu"></i></a>
-		</div>
-	</nav>
-
-	<div class="container z-dpeth-2" style="min-height:580;">
-		<div class="section">
-		</table>
-		<table align="center" border="1" width="800px" cellpadding="1" cellspacing="0" class="table">  
-			<thead class="nav-light" style="background-color: #e3f2fd;">
+<table border="0" align="center" cellpadding="1" cellspacing="0" width="800px">
+<tr><td><a href="tambah_data.php"><input type="button" Value="Tambah Data"></a></td></tr>
+</table>
+<table border="1" align="center" cellpadding="1" cellspacing="0" width="800px">
+		<thead id="tampilan">
+		<tr>
 		<tr align="center">
 			<th scope="col">No</th>
 			<th scope="col">Barang</th>

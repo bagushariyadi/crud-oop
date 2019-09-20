@@ -14,9 +14,24 @@ else
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Belajar OOP Dasar</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<header>
+	<div class="container">
+	<div id="merk">
+		<h1>BELAJAR CRUD OOP PHP</h1>
+	</div>
+	<nav>
+		<ul>
+			<li class="active"><a href="index.php">Home</a></li>
+			<li><a href="tampil.php">Lihat Data</a></li>
+			<span><a href="logout.php">Logout</a></span>
+		</ul>
+	</nav>
+	</div>
+</header>
 <h3>Update Data Barang</h3>
 <hr/>
 <form method="post" action="proses_barang.php?action=update">
